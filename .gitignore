@@ -1,0 +1,36 @@
+# Dependencies and package-manager files
+node_modules/
+.pnp/
+.pnp.js
+
+# Build and coverage output
+dist/
+build/
+coverage/
+.firebase/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+firebase-debug.log
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Firebase service-account credentials
+service-account*.json
+*-firebase-adminsdk-*.json
