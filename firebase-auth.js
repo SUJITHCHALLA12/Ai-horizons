@@ -59,6 +59,7 @@ async function finishSignIn(user) {
     console.warn("Could not save the user profile.", error);
   }
   localStorage.setItem("ai-horizons-user", "true");
+  localStorage.setItem("massive-ai-user", "true");
   document.body.classList.remove("signed-out");
   if (typeof window.showView === "function") window.showView("home");
   const button = byId("authButton");
@@ -110,6 +111,7 @@ byId("emailSignup")?.addEventListener("submit", startEmailSignUp, true);
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
     localStorage.removeItem("ai-horizons-user");
+    localStorage.removeItem("massive-ai-user");
     document.body.classList.add("signed-out");
     const button = byId("authButton");
     if (button) {

@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
 import { getAnalytics, isSupported } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
 
-const firebaseConfig = {
+const defaultConfig = {
   apiKey: "AIzaSyDlr4sme2ialTSEjkO_SAxHIkfbq66jMX0",
   authDomain: "ai-horizons-54ab9.firebaseapp.com",
   projectId: "ai-horizons-54ab9",
@@ -10,6 +10,8 @@ const firebaseConfig = {
   appId: "1:1087064454163:web:b04cefb2d4d995b9e23be6",
   measurementId: "G-0VRZT968M5"
 };
+
+const firebaseConfig = (typeof window !== "undefined" && window.__FIREBASE_CONFIG__) || defaultConfig;
 
 const app = initializeApp(firebaseConfig);
 

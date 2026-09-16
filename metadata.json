@@ -1,0 +1,8 @@
+{
+  "name": "Ai Horizons — AI tool atlas",
+  "description": "A curated collection of exceptional AI tools organized by capability with an AI and IoT guide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
